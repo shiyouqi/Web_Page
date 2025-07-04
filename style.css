@@ -1,0 +1,31 @@
+/* 这个CSS文件会自动应用到上面的HTML文件 */
+
+/* 设置页面背景色 */
+body {
+  background-color: #f0f0f0;
+  font-family: "微软雅黑", sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 美化所有的h1标题 */
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+/* 为所有段落设置基础样式 */
+p {
+  line-height: 1.6;
+  color: #34495e;
+}
+
+/* 为有intro类的段落设置特殊样式 */
+.intro {
+  background-color: #e8f4fd;
+  padding: 15px;
+  border-left: 4px solid #3498db;
+  font-weight: bold;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>异步编程学习实验室</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        button { margin: 5px; padding: 10px 15px; background: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .output { background: #f5f5f5; padding: 10px; margin: 10px 0; border-radius: 3px; min-height: 100px; font-family: monospace; white-space: pre-wrap; }
+        .loading { color: #007bff; }
+        .success { color: green; }
+        .error { color: red; }
+        input { margin: 5px; padding: 8px; border: 1px solid #ccc; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>异步编程学习实验室</h1>
+        
+        <div class="section">
+            <h2>1. 同步 vs 异步对比</h2>
+            <button id="sync-demo">演示同步执行</button>
+            <button id="async-demo">演示异步执行</button>
+            <button id="clear-log">清空日志</button>
+            <div id="comparison-output" class="output">点击按钮查看同步和异步的区别</div>
+        </div>
+        
+        <div class="section">
+            <h2>2. 回调函数深度学习</h2>
+            <button id="callback-basic">基础回调</button>
+            <button id="callback-practical">实用回调示例</button>
+            <button id="callback-hell">回调地狱演示</button>
+            <div id="callback-output" class="output">回调函数演示结果</div>
+        </div>
+        
+        <div class="section">
+            <h2>3. Promise基础学习</h2>
+            <button id="promise-basic">Promise基础</button>
+            <button id="promise-chain">Promise链式调用</button>
+            <button id="promise-error">Promise错误处理</button>
+            <div id="promise-output" class="output">Promise演示结果</div>
+        </div>
+        
+        <div class="section">
+            <h2>4. async/await 现代语法</h2>
+            <button id="async-await-basic">async/await基础</button>
+            <button id="async-await-error">async/await错误处理</button>
+            <button id="async-await-multiple">处理多个异步操作</button>
+            <div id="async-await-output" class="output">async/await演示结果</div>
+        </div>
+        
+        <div class="section">
+            <h2>5. 实际应用：模拟网络请求</h2>
+            <input type="text" id="user-id" placeholder="输入用户ID (1-10)" value="1">
+            <button id="fetch-user">获取用户信息</button>
+            <button id="fetch-multiple">批量获取用户</button>
+            <div id="network-output" class="output">网络请求结果</div>
+        </div>
+        
+        <div class="section">
+            <h2>6. UI非阻塞演示</h2>
+            <button id="blocking-task">阻塞UI的任务</button>
+            <button id="non-blocking-task">非阻塞UI的任务</button>
+            <input type="text" id="test-input" placeholder="在执行任务时尝试在这里输入">
+            <div id="ui-output" class="output">UI阻塞测试结果</div>
+        </div>
+    </div>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
